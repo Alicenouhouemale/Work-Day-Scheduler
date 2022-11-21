@@ -8,3 +8,15 @@ function displayTime() {
   timeDisplayEl.text(todayDate);
 }
 console.log(currenTime);
+
+if (currenTime == 9) {
+  nine.classList.add("present");
+  console.log("present");
+} else if (currenTime < 9) {
+  nine.classList.add("future");
+  console.log("future");
+} else if (currenTime > 9) {
+  nine.classList.add("past");
+  console.log("past");
+}
+console.log(nine);
